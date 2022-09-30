@@ -1,0 +1,18 @@
+@import 'utils/variables';
+@import 'base/normalize';
+@import 'base/reset';
+@import 'base/base';
+
+@import 'components/logo';
+@import 'components/page-header';
+@import 'components/page-footer';
+
+@import 'components/index/hero';
+@import 'components/index/features';
+@import 'components/index/activity';
+@import 'components/index/team';
+@import 'components/index/companies';
+@import 'components/index/modal';
+
+@import 'components/portfolio/works';
+ 
