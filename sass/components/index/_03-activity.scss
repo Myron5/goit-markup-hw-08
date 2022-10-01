@@ -5,7 +5,16 @@
 */
 
 .activity-sec {
+  display: none;
+  padding-top: 0;
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
+
   &__title {
+    margin-top: 24px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;

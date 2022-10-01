@@ -4,9 +4,14 @@
   |============================
 */
 
+/* page-header */
 .page-header {
-  min-height: 80px;
+  height: 60px;
   border-bottom: 1px solid getColor('header-border');
+
+  @media screen and (min-width: $tablet) {
+    height: 80px;
+  }
 
   &__container {
     display: flex;
@@ -15,15 +20,21 @@
   }
 }
 
+/* nav */
 .nav {
   display: flex;
   flex-wrap: wrap;
 
   &__list {
+    display: none;
     margin-left: 93px;
-    display: flex;
     flex-wrap: wrap;
     align-items: center;
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      margin-left: 87px;
+    }
   }
 
   &__item:not(:last-child) {
@@ -60,28 +71,57 @@
   }
 }
 
+/* contacts-list */
 .contacts-list {
+  display: none;
+
   margin-left: auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 
   &__item:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (min-width: $desktop) {
+      margin-right: 30px;
+    }
   }
 
   &__link {
     display: flex;
     align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     color: getColor('text');
     letter-spacing: 0.02em;
     text-decoration: none;
+
     transition: color $animation;
+
+    &--first {
+      padding-top: 19px;
+      padding-bottom: 10px;
+    }
+
+    &--second {
+      padding-top: 0;
+      padding-bottom: 19px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
 
     &:hover,
     &:focus {
@@ -102,5 +142,35 @@
       width: 10px;
       height: 16px;
     }
+  }
+}
+
+/* burger */
+.burger {
+  display: inline-block;
+
+  margin-left: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  background-color: transparent;
+  border: none;
+  color: #000;
+
+  transition: color $animation;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    fill: currentColor;
+  }
+
+  &:hover,
+  &:focus {
+    color: getColor('accent');
   }
 }

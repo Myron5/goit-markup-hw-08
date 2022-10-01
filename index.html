@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
+    <!-- Хедер -->
     <header class="page-header">
       <div class="container page-header__container">
         <nav class="nav page-header__nav">
@@ -24,15 +25,20 @@
           >
             <span class="logo__span">Web</span>Studio
           </a>
+
           <ul class="nav__list">
             <li class="nav__item"><a class="nav__link nav__link--active" href="">Студія</a></li>
             <li class="nav__item"><a class="nav__link" href="portfolio.html">Портфоліо</a></li>
             <li class="nav__item"><a class="nav__link" href="">Контакти</a></li>
           </ul>
         </nav>
+
         <ul class="contacts-list page-header__contacts-list">
           <li class="contacts-list__item">
-            <a class="contacts-list__link" href="mailto:info@devstudio.com">
+            <a
+              class="contacts-list__link contacts-list__link--first"
+              href="mailto:info@devstudio.com"
+            >
               <svg class="contacts-list__icon contacts-list__icon--letter">
                 <use href="images/icons.svg#letter"></use>
               </svg>
@@ -40,7 +46,7 @@
             </a>
           </li>
           <li class="contacts-list__item">
-            <a class="contacts-list__link" href="tel:+380961111111">
+            <a class="contacts-list__link contacts-list__link--second" href="tel:+380961111111">
               <svg class="contacts-list__icon contacts-list__icon--telephone">
                 <use href="images/icons.svg#telephone"></use>
               </svg>
@@ -48,10 +54,23 @@
             </a>
           </li>
         </ul>
+
+        <button
+          class="burger"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          js-open-menu
+        >
+          <svg class="burger__icon">
+            <use href="./images/icons.svg#mobile-burger-open"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <main class="page-main">
+      <!-- Секція1 -->
       <section class="hero-sec">
         <div class="hero-sec__background">
           <div class="container hero-sec__container">
@@ -61,6 +80,7 @@
         </div>
       </section>
 
+      <!-- Секція2 -->
       <section class="features-sec">
         <div class="container features-sec__container">
           <h2 class="features-sec__title">Наші переваги</h2>
@@ -114,6 +134,7 @@
         </div>
       </section>
 
+      <!-- Секція3 -->
       <section class="activity-sec">
         <div class="container activity-sec__container">
           <h2 class="activity-sec__title">Чим ми займаємося</h2>
@@ -155,6 +176,7 @@
         </div>
       </section>
 
+      <!-- Секція4 -->
       <section class="team-sec">
         <div class="container team-sec__container">
           <h2 class="team-sec__title">Наша команда</h2>
@@ -419,6 +441,7 @@
         </div>
       </section>
 
+      <!-- Секція5 -->
       <section class="companies-sec">
         <div class="container companies-sec__container">
           <h2 class="companies-sec__title">Постійні клієнти</h2>
@@ -470,9 +493,10 @@
       </section>
     </main>
 
+    <!-- Футер -->
     <footer class="page-footer">
       <div class="container page-footer__container">
-        <div class="page-footer__location-info location-info">
+        <div class="location-info page-footer__location-info">
           <a
             class="logo logo--white"
             href=""
@@ -496,7 +520,7 @@
             </ul>
           </address>
         </div>
-        <div class="page-footer__socials-info socials-info">
+        <div class="socials-info page-footer__socials-info">
           <strong class="socials-info__title">Приєднуйтесь</strong>
           <ul class="socials socials--footer">
             <li class="socials__item socials__item--footer">
@@ -553,7 +577,7 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__mail-info mail-info">
+        <div class="mail-info page-footer__mail-info">
           <form class="mail-info__form">
             <label>
               <strong class="mail-info__title">Підпишіться на розсилку</strong>
@@ -571,6 +595,7 @@
       </div>
     </footer>
 
+    <!-- Форма -->
     <div class="backdrop backdrop--is-hidden" data-backdrop>
       <div class="modal-box modal-box--close" data-modal>
         <form class="modal-box__form">
@@ -665,6 +690,61 @@
         </button>
       </div>
     </div>
+
+    <!-- Бургер меню  -->
+    <div class="menu page-header__menu" js-menu-container>
+      <button class="menu__btn" type="button" js-close-menu>
+        <svg class="menu__icon">
+          <use href="./images/icons.svg#mobile-burger-close"></use>
+        </svg>
+      </button>
+
+      <nav class="menu-nav">
+        <ul class="menu-nav__list">
+          <li class="menu-nav__item">
+            <a class="menu-nav__link menu-nav__link--active" href="">Студія</a>
+          </li>
+          <li class="menu-nav__item">
+            <a class="menu-nav__link" href="portfolio.html">Портфоліо</a>
+          </li>
+          <li class="menu-nav__item">
+            <a class="menu-nav__link" href="">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="bottom-block">
+        <ul class="menu-contacts">
+          <li class="menu-contacts__item">
+            <a class="menu-contacts__link" href="tel:+380961111111"> +38 096 111 11 11 </a>
+          </li>
+          <li class="menu-contacts__item">
+            <a
+              class="menu-contacts__link menu-contacts__link--small"
+              href="mailto:info@devstudio.com"
+            >
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+
+        <ul class="menu-socials">
+          <li class="menu-socials__item"><a href="" class="menu-socials__link">Instagram</a></li>
+          <li class="menu-socials__item"><a href="" class="menu-socials__link">Twitter</a></li>
+          <li class="menu-socials__item"><a href="" class="menu-socials__link">Facebook</a></li>
+          <li class="menu-socials__item"><a href="" class="menu-socials__link">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Скритпи -->
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

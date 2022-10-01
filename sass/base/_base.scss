@@ -6,17 +6,32 @@ body {
 }
 
 .container {
-  max-width: 1200px;
-
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  @media screen and (min-width: $mobile) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 1200px;
+  }
 }
 
 section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 @mixin centerFlex() {
@@ -37,4 +52,18 @@ section {
   top: $top;
   left: $left;
   transform: translate($transX, $transY);
+}
+
+@mixin flexBasis($col_count, $gap) {
+  flex-basis: calc((100% - ($col_count - 1) * $gap) / $col_count);
+}
+
+@mixin responsiveFont($screen_width, $font_size) {
+  font-size: calc($font_size * 100vw / $screen_width);
+}
+
+@mixin responsiveCustomFont($screen_width, $font_size, $rate) {
+  font-size: calc(
+    calc(1 - $rate) * $font_size + calc($rate * calc($font_size * 100vw / $screen_width))
+  );
 }
