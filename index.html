@@ -140,34 +140,119 @@
           <h2 class="activity-sec__title">Чим ми займаємося</h2>
           <ul class="activity-sec__list">
             <li class="activity-sec__item">
-              <img
-                class="activity-sec__img"
-                src="images/activities/activity_1.jpg"
-                alt="Програмування сайту"
-                width="370"
-              />
+              <!-- pic -->
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/activities/activity_1_370.webp   370w,
+                    ./images/activities/activity_1_555.webp   555w,
+                    ./images/activities/activity_1_740.webp   740w,
+                    ./images/activities/activity_1_1110.webp 1110w
+                  "
+                  sizes="(min-width: 1200px) 370px"
+                  type="image/webp"
+                  alt="Програмування сайту"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/activities/activity_1_370.jpg   370w,
+                    ./images/activities/activity_1_555.jpg   555w,
+                    ./images/activities/activity_1_740.jpg   740w,
+                    ./images/activities/activity_1_1110.jpg 1110w
+                  "
+                  sizes="(min-width: 1200px) 370px"
+                  type="image/jpg"
+                  alt="Програмування сайту"
+                />
+
+                <img
+                  class="activity-sec__img"
+                  src="images/activities/activity_1_370.jpg"
+                  alt="Програмування сайту"
+                  width="370"
+                />
+              </picture>
+
               <div class="activity-sec__thumb">
                 <p class="activity-sec__caption">Десктопні додатки</p>
               </div>
             </li>
             <li class="activity-sec__item">
-              <img
-                class="activity-sec__img"
-                src="images/activities/activity_2.jpg"
-                alt="Адаптивна верстка сайту"
-                width="370"
-              />
+              <!-- pic -->
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/activities/activity_2_370.webp   370w,
+                    ./images/activities/activity_2_555.webp   555w,
+                    ./images/activities/activity_2_740.webp   740w,
+                    ./images/activities/activity_2_1110.webp 1110w
+                  "
+                  sizes="(min-width: 1200px) 370px"
+                  type="image/webp"
+                  alt="Адаптивна верстка сайту"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/activities/activity_2_370.jpg   370w,
+                    ./images/activities/activity_2_555.jpg   555w,
+                    ./images/activities/activity_2_740.jpg   740w,
+                    ./images/activities/activity_2_1110.jpg 1110w
+                  "
+                  sizes="(min-width: 1200px) 370px"
+                  type="image/jpg"
+                  alt="Адаптивна верстка сайту"
+                />
+
+                <img
+                  class="activity-sec__img"
+                  src="images/activities/activity_2_370.jpg"
+                  alt="Адаптивна верстка сайту"
+                  width="370"
+                />
+              </picture>
               <div class="activity-sec__thumb">
                 <p class="activity-sec__caption">Мобільні додатки</p>
               </div>
             </li>
             <li class="activity-sec__item">
-              <img
-                class="activity-sec__img"
-                src="images/activities/activity_3.jpg"
-                alt="Дизайнер створює сайт"
-                width="370"
-              />
+              <!-- pic -->
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/activities/activity_3_370.webp   370w,
+                    ./images/activities/activity_3_555.webp   555w,
+                    ./images/activities/activity_3_740.webp   740w,
+                    ./images/activities/activity_3_1110.webp 1110w
+                  "
+                  sizes="(min-width: 1200px) 370px"
+                  type="image/webp"
+                  alt="Дизайнер створює сайт"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/activities/activity_3_370.jpg   370w,
+                    ./images/activities/activity_3_555.jpg   555w,
+                    ./images/activities/activity_3_740.jpg   740w,
+                    ./images/activities/activity_3_1110.jpg 1110w
+                  "
+                  sizes="(min-width: 1200px) 370px"
+                  type="image/jpg"
+                  alt="Дизайнер створює сайт"
+                />
+
+                <img
+                  class="activity-sec__img"
+                  src="./images/activities/activity_3_370.jpg"
+                  alt="Дизайнер створює сайт"
+                  width="370"
+                />
+              </picture>
               <div class="activity-sec__thumb">
                 <p class="activity-sec__caption">Дизайнерські рішення</p>
               </div>
@@ -182,14 +267,41 @@
           <h2 class="team-sec__title">Наша команда</h2>
           <ul class="team-sec__list">
             <li class="team-sec__item">
-              <img
-                class="team-sec__img"
-                src="images/workers/worker_1.jpg"
-                alt="Ігор Дем'яненко"
-                width="270"
-              />
+              <!-- pic -->
+              <picture>
+                <source
+                  srcset="
+                    ./images/workers/worker-1_270.webp 270w,
+                    ./images/workers/worker-1_405.webp 405w,
+                    ./images/workers/worker-1_540.webp 540w,
+                    ./images/workers/worker-1_810.webp 810w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                  type="image/webp"
+                  alt="Ігор Дем'яненко"
+                />
+                <source
+                  srcset="
+                    ./images/workers/worker-1_270.jpg 270w,
+                    ./images/workers/worker-1_405.jpg 405w,
+                    ./images/workers/worker-1_540.jpg 540w,
+                    ./images/workers/worker-1_810.jpg 810w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                  type="image/jpg"
+                  alt="Ігор Дем'яненко"
+                />
+
+                <img
+                  class="team-sec__img"
+                  src="./images/workers/worker-1_270.jpg"
+                  alt="Ігор Дем'яненко"
+                  width="270"
+                />
+              </picture>
               <h3 class="team-sec__capture">Ігор Дем'яненко</h3>
               <p class="team-sec__description" lang="en">Product Designer</p>
+              <!-- soc -->
               <ul class="socials team-sec__socials">
                 <li class="socials__item">
                   <a
@@ -246,14 +358,41 @@
               </ul>
             </li>
             <li class="team-sec__item">
-              <img
-                class="team-sec__img"
-                src="images/workers/worker_2.jpg"
-                alt="Ольга Рєпіна"
-                width="270"
-              />
+              <!-- pic -->
+              <picture>
+                <source
+                  srcset="
+                    ./images/workers/worker-2_270.webp 270w,
+                    ./images/workers/worker-2_405.webp 405w,
+                    ./images/workers/worker-2_540.webp 540w,
+                    ./images/workers/worker-2_810.webp 810w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                  type="image/webp"
+                  alt="Ольга Рєпіна"
+                />
+                <source
+                  srcset="
+                    ./images/workers/worker-2_270.jpg 270w,
+                    ./images/workers/worker-2_405.jpg 405w,
+                    ./images/workers/worker-2_540.jpg 540w,
+                    ./images/workers/worker-2_810.jpg 810w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                  type="image/jpg"
+                  alt="Ольга Рєпіна"
+                />
+
+                <img
+                  class="team-sec__img"
+                  src="./images/workers/worker-2_270.jpg"
+                  alt="Ольга Рєпіна"
+                  width="270"
+                />
+              </picture>
               <h3 class="team-sec__capture">Ольга Рєпіна</h3>
               <p class="team-sec__description" lang="en">Frontend Developer</p>
+              <!-- soc -->
               <ul class="socials team-sec__socials">
                 <li class="socials__item">
                   <a
@@ -310,14 +449,41 @@
               </ul>
             </li>
             <li class="team-sec__item">
-              <img
-                class="team-sec__img"
-                src="images/workers/worker_3.jpg"
-                alt="Микола Тарасов"
-                width="270"
-              />
+              <!-- pic -->
+              <picture>
+                <source
+                  srcset="
+                    ./images/workers/worker-3_270.webp 270w,
+                    ./images/workers/worker-3_405.webp 405w,
+                    ./images/workers/worker-3_540.webp 540w,
+                    ./images/workers/worker-3_810.webp 810w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                  type="image/webp"
+                  alt="Микола Тарасов"
+                />
+                <source
+                  srcset="
+                    ./images/workers/worker-3_270.jpg 270w,
+                    ./images/workers/worker-3_405.jpg 405w,
+                    ./images/workers/worker-3_540.jpg 540w,
+                    ./images/workers/worker-3_810.jpg 810w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                  type="image/jpg"
+                  alt="Микола Тарасов"
+                />
+
+                <img
+                  class="team-sec__img"
+                  src="./images/workers/worker-3_270.jpg"
+                  alt="Микола Тарасов"
+                  width="270"
+                />
+              </picture>
               <h3 class="team-sec__capture">Микола Тарасов</h3>
               <p class="team-sec__description" lang="en">Marketing</p>
+              <!-- soc -->
               <ul class="socials team-sec__socials">
                 <li class="socials__item">
                   <a
@@ -374,14 +540,41 @@
               </ul>
             </li>
             <li class="team-sec__item">
-              <img
-                class="team-sec__img"
-                src="images/workers/worker_4.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-              />
+              <!-- pic -->
+              <picture>
+                <source
+                  srcset="
+                    ./images/workers/worker-4_270.webp 270w,
+                    ./images/workers/worker-4_405.webp 405w,
+                    ./images/workers/worker-4_540.webp 540w,
+                    ./images/workers/worker-4_810.webp 810w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                  type="image/webp"
+                  alt="Михайло Єрмаков"
+                />
+                <source
+                  srcset="
+                    ./images/workers/worker-4_270.jpg 270w,
+                    ./images/workers/worker-4_405.jpg 405w,
+                    ./images/workers/worker-4_540.jpg 540w,
+                    ./images/workers/worker-4_810.jpg 810w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                  type="image/jpg"
+                  alt="Михайло Єрмаков"
+                />
+
+                <img
+                  class="team-sec__img"
+                  src="./images/workers/worker-4_270.jpg"
+                  alt="Михайло Єрмаков"
+                  width="270"
+                />
+              </picture>
               <h3 class="team-sec__capture">Михайло Єрмаков</h3>
               <p class="team-sec__description" lang="en">UI Designer</p>
+              <!-- soc -->
               <ul class="socials team-sec__socials">
                 <li class="socials__item">
                   <a
