@@ -1,2 +1,3 @@
-# goit-markup-hw-03
-Моє дз #3 (геометрія + flex)
+# goit-markup-hw-08
+Моє дз #8 (Адаптив)
+https://myron5.github.io/goit-markup-hw-08/
