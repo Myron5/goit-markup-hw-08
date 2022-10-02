@@ -65,6 +65,7 @@
 
 .card {
   @include flexBasis(1, 30px);
+  border: 1px solid getColor('work-card-border');
 
   @media screen and (min-width: $tablet) {
     @include flexBasis(2, 30px);
@@ -126,13 +127,14 @@
     padding-left: 24px;
     padding-right: 24px;
 
-    border: 1px solid getColor('work-card-border');
-    border-top: none;
+    // border: 1px solid getColor('work-card-border');
+    // border-top: none;
   }
 
   &__title {
     font-weight: 700;
-    @include responsiveCustomFont(480px, 15px, 0.1);
+    // @include responsiveCustomFont(480px, 15px, 0.1);
+    font-size: 18px;
     line-height: 2;
     color: getColor('title');
     letter-spacing: 0.06em;
