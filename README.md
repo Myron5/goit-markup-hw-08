@@ -1,2 +1,2 @@
-# goit-markup-hw-08
-Моє дз #8 (Адаптив)
+<h1>WebStudio</h1>
+<p><b>site about it company</b></p>
